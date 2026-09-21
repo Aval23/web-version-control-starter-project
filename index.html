@@ -4,41 +4,59 @@
     <title>Alex Valdez - Bootstrap Example</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Using Bootstrap 5 framework -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery used to load the navbar -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
+
   <body>
     <!-- Navbar gets added here -->
     <div id="nav-placeholder"></div>
-    <!-- Here is where your div container(s) will go with your web page content-->
+    <!-- Web page content goes inside Bootstrap container(s) -->
+    <script>
+      // Load only the #site-nav element from navbar.html
+      $("#nav-placeholder").load("navbar.html #site-nav");
+    </script>
 
     <div>
-      <h1>Hello, GitHub! I'm Alex Valdez!!!!!</h1>
+      <h1>Hello, CS1030!</h1>
       <p>
         This is my first web page using version control with Git and GitHub.
-        -Alex Valdez
       </p>
     </div>
 
-    <script>
-      // Load only the #site-nav element
-      $("#nav-placeholder").load("navbar.html #site-nav");
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <div class="container mt-3" style="background-color: rgb(60, 187, 181)">
-      <h2>This is a cat</h2>
-      <p>The .rounded class adds rounded corners to this cat image</p>
+    <div class="card" style="width: 18rem">
       <img
-        src="dolly.jpg"
-        class="rounded"
-        alt="Cat"
-        width="304"
-        height="236"
+        src="images/aval.jpg"
+        class="card-img-top"
+        alt="Picture of Alex Valdez"
       />
+      <div class="card-body">
+        <h5 class="card-title">Alex Valdez</h5>
+        <p class="card-text">Student at MSU</p>
+        <a href="about.html" class="btn btn-primary">About Me</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img
+        src="images/dolly.jpg"
+        class="card-img-top"
+        alt="Picture of Dolly Purrton"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Dolly Purrton</h5>
+        <p class="card-text">Cutest cat in the world</p>
+        <a href="dolly.html" class="btn btn-primary">About Dolly</a>
+      </div>
     </div>
   </body>
 </html>
