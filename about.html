@@ -21,27 +21,76 @@
     <!-- Web page content goes inside Bootstrap container(s) -->
     <div class="container mt-3">
       <h1>About Alex Valdez</h1>
+
+
+        <div class="dropdown dropdown-menu-end"> <!--Start of div class dropdown dropdown-menu-end-->
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Marine Corps Veteran
+    </button>
+    <ul class="dropdown-menu">
+    <div class="container mt-3">
       <ul>
-        <li>Veteran</li>
-        <li>
-          Licensed aircraft mechanic
-          <img
-            src="images/plane.jpg"
-            class="rounded"
-            alt="Aircraft in the sky"
-            width="300"
-            height="300"
-          />
-        </li>
-        <li>
-          Beginner programmer:
-          <a href="https://github.com/Aval23">Github profile page</a>
-        </li>
+        <li>MOS - 2171 Electro-Optical Ordnance Repairer</li>
+        <li>Locations:</li>
+        <ul>
+          <li>Fort Lee, Virginia</li>
+          <li>Camp Lejeune, North Carolina</li>
+          <li>Moron Airbase, Spain</li>
+          <li>Camp Lemonnier, Djibouti</li>
+        </ul>
+        <li></li>
+      </ul> 
+    </div> <!--End of div class container mt-3-->
+  </div> <!--End of div class dropdown dropdown-menu-end-->
+
+          <div class="dropdown dropdown-menu-end"> <!--Start of div class dropdown dropdown-menu-end-->
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Licensed A&P Aircraft Mechanic
+    </button>
+    <ul class="dropdown-menu">
+    <div class="container mt-3">
+      <ul>
+        <li>Aviation Technology A.S. - University of the District of Columbia Community College</li>
+        <li>Experience:</li>
+        <ul>
+          <li>SpaceX - Hawthorne, California</li>
+          <li>SpaceX - Starbase, Texas</li>
+        </ul>
+        <li></li>
       </ul>
     </div>
+  </div>
+
+
+        <div class="dropdown dropdown-menu-end">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Computer Engineering B.S.
+    </button>
+    <ul class="dropdown-menu">
+    <div class="container mt-3">
+      <ul>
+        <li>Metro State University - Denver</li>
+        <li>Classes:</li>
+        <ul>
+          <li>CEE2350 - C programming</li>
+          <li>CS1030 - HTML/CSS/Bootstrapping</li>
+          <li>CS1050 - Java programming</li>
+          <li>MTH1410 - Calculus 1</li>
+        </ul>
+        <li>Projects:</li>
+        <ul>
+          <li><a href="https://github.com/Aval23">Github profile page</a></li>
+        </ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+    </div>
+
     <script>
       // Load only the #site-nav element from navbar.html
       $("#nav-placeholder").load("navbar.html #site-nav");
     </script>
+
   </body>
 </html>
